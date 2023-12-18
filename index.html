@@ -1,7 +1,18 @@
+
+/* <!-- 
+    Design the User Interface (HTML Pages) for a blogging website.
+    Home page (3 Marks)
+    Listing of blogs (3 Marks)
+    Viewing a blog content Page (3 Marks)
+    Adding a new blog content Page (3 Marks)
+    The above-mentioned pages are minimum requirements; you may add more pages if required.
+    
+    Hosting the pages in GitHub pages  (3 Marks)
+    --> */
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <title>Blog101</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
@@ -25,6 +36,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#posts">Posts</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog List
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown" id="blogListDropdown">
+                            <li class="Post01">
+                                <a class="nav-link" href="#posts">Post01</a>
+                            </li>
+                            <li class="Post02">
+                                <a class="nav-link" href="#posts">Post02</a>
+                            </li>
+                            <li class="Post03">
+                                <a class="nav-link" href="#posts">Post03</a>
+                            </li>
+                        </ul>
+                    </li>
+        
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -36,7 +64,7 @@
     <section >
         <div class="hero">
             <video autoplay loop muted plays-inline class="back-video">
-                <source src = "images/video.mp4" type="video/mp4">
+                <source src = "images/video (1080p).mp4" type="video/mp4">
             </video>
            
             <div class="content">
@@ -46,19 +74,19 @@
         </div>
 <!-- ??????????????????????????????????????????????? -->
 <section id="posts">
-        <div class="hero">
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src = "images/video01.mp4" type="video/mp4">
-            </video>
-           
-            <div class="content">
-                <h2>Post 01</h2>
-                <h2>Post Title 1</h2>
-                <p class="meta">Posted on January 1, 2023</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
-                <a href="#">Back to the top</a>
-            </div>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src = "images/video01.mp4" type="video/mp4">
+        </video>
+       
+        <div class="content1">
+            <h2>Post 01</h2>
+            <h2>Post Title 1</h2>
+            <p class="meta">Posted on January 3, 2023</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+            <a href="#">Back to the top</a>
         </div>
+    </div>
 </section>
 <!-- ///////////////////////////// -->
 
@@ -70,10 +98,10 @@
             <source src = "images/video02.mp4" type="video/mp4">
         </video>
        
-        <div class="content">
+        <div class="content1">
             <h2>Post 02</h2>
             <h2>Post Title 1</h2>
-            <p class="meta">Posted on January 2, 2023</p>
+            <p class="meta">Posted on January 3, 2023</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
             <a href="#">Back to the top</a>
         </div>
@@ -86,10 +114,10 @@
 <section id="posts">
     <div class="hero">
         <video autoplay loop muted plays-inline class="back-video">
-            <source src = "images/pexels_videos_2000539 (2160p).mp4" type="video/mp4">
+            <source src = "images/video.mp4" type="video/mp4">
         </video>
        
-        <div class="content">
+        <div class="content1">
             <h2>Post 03</h2>
             <h2>Post Title 1</h2>
             <p class="meta">Posted on January 3, 2023</p>
@@ -99,10 +127,25 @@
     </div>
 </section>
 <!-- ///////////////////////////// -->
-
-        
+    <br>
+    <section id="add-blog">
+        <div class="container">
+            <h2>Add a New Blog</h2>
+            <form id="blog-form">
+                <div class="mb-3">
+                    <label for="blog-title" class="form-label">Blog Title</label>
+                    <input type="text" class="form-control" id="blog-title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="blog-content" class="form-label">Blog Content</label>
+                    <textarea class="form-control" id="blog-content" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Publish Blog</button>
+            </form>
+        </div>
     </section>
-
+    <br>
+        
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Contact Me</h1>
@@ -125,6 +168,9 @@
             </div>
         </div>
     </section>
+
+
+
     
     <footer id="footer">
         <div class="container-fluid">

@@ -82,6 +82,7 @@ Hosting the pages in GitHub pages  (3 Marks)
     right: 0;
     bottom: 0;
     z-index: -1;
+ 
   
   }
   
@@ -89,6 +90,7 @@ Hosting the pages in GitHub pages  (3 Marks)
     .back-video{
         width: 100%;
         height: auto;
+        
     }
   }
   @media(max-aspect-ratio: 16/9){
@@ -114,7 +116,47 @@ Hosting the pages in GitHub pages  (3 Marks)
   }
   
 
-  .content h2{
+  .content1 h2{
     color: #fff;
   }
 
+  .content1{
+    text-align: left;
+  }
+
+  .content1 p{
+    color: #fff;
+  }
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+.navbar-nav .dropdown-menu {
+  background-color: #333;
+}
+
+.navbar-nav .dropdown-menu a {
+  color: #fff !important;
+}
+
+.navbar-nav .dropdown-menu a:hover {
+  background-color: #007BFF;
+}
